@@ -1,4 +1,4 @@
-# This files takes several lines of s3 links from the CSV file
+# This files takes several lines of s3 links from two CSV files: the file with the raw s3 links and the file with the processed s3 links.
 python input_python_program.py --line 0 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
 python input_python_program.py --line 2 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
 python input_python_program.py --line 4 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
