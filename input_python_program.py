@@ -1,3 +1,8 @@
+# This script downloads the processed and raw MID s3 links. The processed files contain information about run type
+# (run 1 or run 2) while the raw files contain the dicoms. The script downloads the raw and processed links
+# into a single folder and then completes dcm2niix. Finally, the script places the generated nii and json files into BIDS
+# format along with the events file (from the processed links).
+# This script can be altered to process SST, nBACK, and rest links.
 import os, shutil, fnmatch, argparse
 import re, subprocess
 import time
