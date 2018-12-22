@@ -8,8 +8,8 @@ def gen_token():
     #password  = getpass.getpass('Enter your NIMH Data Archives password:')
 
     generator = NDATokenGenerator(web_service_url)
-    username='joakond'
-    password='l0^eyoupooch'
+    username='inset username here'
+    password='inset password here'
     token = generator.generate_token(username, password)
 
     # Read .aws/credentials from the user's HOME directory, add a NDA profile, and update with credentials
