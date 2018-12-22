@@ -1,3 +1,4 @@
+# This file downloads T1 s3 links and places them in the BIDS format
 import os, shutil, fnmatch, argparse
 import subprocess
 from input_python_program import download_a_link
