@@ -1,5 +1,5 @@
-# 
-python input_python_program.py --line 0 --input_file1 ONLYGOOD.csv --input_file2 ONLYGOODRAW.csv
-python input_python_program.py --line 2 --input_file1 ONLYGOOD.csv --input_file2 ONLYGOODRAW.csv
-python input_python_program.py --line 4 --input_file1 ONLYGOOD.csv --input_file2 ONLYGOODRAW.csv
-python input_python_program.py --line 6 --input_file1 ONLYGOOD.csv --input_file2 ONLYGOODRAW.csv
+# This files takes several lines of s3 links from the CSV file
+python input_python_program.py --line 0 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
+python input_python_program.py --line 2 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
+python input_python_program.py --line 4 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
+python input_python_program.py --line 6 --input_file1 S3linkprocessed.csv --input_file2 S3linkraw.csv
