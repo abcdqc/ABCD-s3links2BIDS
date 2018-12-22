@@ -1,4 +1,5 @@
-# This script generates temporary AWS credentials and updates the AWS credentials file. Once a connection with AWS has been established, s3 links for the ABCD database can be downloaded.
+# This script generates temporary AWS credentials and updates the AWS credentials file.
+# Once a connection with AWS has been established, s3 links for the ABCD database can be downloaded.
 import os
 from nda_aws_token_generator import *
 import getpass
