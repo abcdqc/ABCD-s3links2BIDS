@@ -13,6 +13,5 @@ Prerequisites for the download_raw.py script:
   - The script get_token_example.py found on this GitHub page automatically generates temporary AWS credentials and updates the credentials file. Simply insert your NDA username and password and input your path the the .aws credentials file.
     - Please note that keys are valid for 24 hours.
   - Congratulations! You can now effectively download data from the ABCD dataset. In the context of using the download_raw.py file (this file downloads all of the raw data for all subjects, runs, etc.), credentials are generate externally (outside of the swarm).
-
 Prerequisites for the do_dcm.py script:
   - The do_dcm.py script directly follows from the download_raw.py script. This particular script opens the raw and pre-processed .tgz files, utilizes DCM2NIIX to convert the raw dicoms to nii files, and then places the data in the Brain Imaging Data Structure (BIDS).
