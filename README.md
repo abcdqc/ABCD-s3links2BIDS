@@ -13,5 +13,8 @@ Prerequisites for the download_raw.py script:
   - The script get_token_example.py found on this GitHub page automatically generates temporary AWS credentials and updates the credentials file. Simply insert your NDA username and password and input your path the the .aws credentials file.
     - Please note that keys are valid for 24 hours.
   - Congratulations! You can now effectively download data from the ABCD dataset. In the context of using the download_raw.py file (this file downloads all of the raw data for all subjects, runs, etc.), credentials are generate externally (outside of the swarm).
+
 Prerequisites for the do_dcm.py script:
   - The do_dcm.py script directly follows from the download_raw.py script. This particular script opens the raw and pre-processed .tgz files, utilizes DCM2NIIX to convert the raw dicoms to nii files, and then places the data in the Brain Imaging Data Structure (BIDS).
+  - DCM2NIIX can be found here: https://github.com/rordenlab/dcm2niix. I recommend using conda to install this software, as it is probably the easiest method on the NIH server.
+  - You will also need to use jq (https://stedolan.github.io/jq/), a command-line JSON processor. In this context, jq is used to add the TaskName section to the json files once in BIDS format. For those working on the NIH Biowulf server, jq is already installed. On Biowulf, jq can be loaded externally by running "module load jq." For more information about the formating of json files for BIDS format please see this pdf: https://bids.neuroimaging.io/bids_spec.pdf.
